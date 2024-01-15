@@ -1,0 +1,27 @@
+Here are the steps to set the environment variable:
+
+1. Obtain Quandl API Key:
+If you haven't obtained a Quandl API key yet, you need to sign up for a Quandl account and obtain an API key from the Quandl website.
+
+2. Set QUANDL_API_KEY:
+Set the QUANDL_API_KEY environment variable. You can do this in your terminal or command prompt. Replace 'YOUR_QUANDL_API_KEY' with your actual Quandl API key.
+
+For Linux/Mac:
+export QUANDL_API_KEY=YOUR_QUANDL_API_KEY
+
+3. Try the Ingestion:
+After setting the environment variable, retry the Zipline ingestion command:
+
+zipline ingest -b quandl
+
+4. Make sure to replace 'YOUR_QUANDL_API_KEY' with your actual Quandl API key. After setting the environment variable, Zipline should be able to access Quandl data during the ingestion process.
+
+5. To check data has been ingested:
+
+zipline bundels
+
+it will show all the bundels that has been ingested.
+
+
+
+
